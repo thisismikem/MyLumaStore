@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parameters Suite" parallel="tests" thread-count="2">
+    <parameter name="browser" value="Chrome"></parameter>
+
+    <test name="Pass Parameters Test">
+        <parameter name="URL" value="https://magento.softwaretestingboard.com"></parameter>
+        <classes>
+            <class name="com.mmtest.testcases.CreateNewAccountTest"></class>
+        </classes>
+    </test>
+
+</suite>
